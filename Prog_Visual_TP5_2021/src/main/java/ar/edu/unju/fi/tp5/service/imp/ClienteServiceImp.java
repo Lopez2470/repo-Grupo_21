@@ -13,9 +13,6 @@ import ar.edu.unju.fi.tp5.util.TablaCliente;
 
 
 
-
-
-
 @Service("clienteUtilService")
 public class ClienteServiceImp implements IClienteService {
 	private static final Log LOGGER = LogFactory.getLog(ClienteServiceImp.class);

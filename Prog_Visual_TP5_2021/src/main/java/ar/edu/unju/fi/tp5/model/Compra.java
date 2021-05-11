@@ -1,6 +1,8 @@
 package ar.edu.unju.fi.tp5.model;
 
+import org.springframework.stereotype.Component;
 
+@Component
 public class Compra {
 	private int id;
 	private Producto producto;
