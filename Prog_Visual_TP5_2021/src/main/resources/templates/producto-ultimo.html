@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+	<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Ultimo Producto Dado de Alta</title>
+		<link rel="stylesheet" type="text/css" th:href=@{/webjars/bootstrap/4.6.0/css/bootstrap.min.css}>
+		<link rel="stylesheet" type="text/css" th:href="@{/css/miestilo.css}">
+	</head>
+	<body>
+	<div class="container">
+		<header th:replace="layout/header :: header"></header>
+		<div class="row ">
+		<section class=" col-md-9 bg-light">
+			<h3>RESULTADOS: Detalles del Ultimo Producto dado de Alta</h3>
+			<p>Codigo del Producto: <spam th:text="${producto.codigo}"></spam> </p>
+			<p>Nombre del Producto: <spam th:text="${producto.nombre}"></spam> </p>
+			<p>Precio del Producto: <spam th:text="${producto.precio}"></spam> </p>
+			<p>Marca del Producto: <spam th:text="${producto.marca}"></spam> </p>
+		    <p>Stock del Producto: <spam th:text="${producto.stock}"></spam> </p>
+		    </br></br>
+		</section>
+		<aside th:replace="layout/publicidad :: publicidad"></aside>
+		
+		</div>
+	</div>	
+	<footer th:replace="layout/footer :: footer"></footer>
+</div>		
+	
+
+		    
+		    
+	</body>
+</html>
