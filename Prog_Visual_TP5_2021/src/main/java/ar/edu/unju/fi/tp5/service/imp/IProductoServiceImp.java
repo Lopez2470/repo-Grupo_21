@@ -11,10 +11,6 @@ import org.springframework.stereotype.Service;
 import ar.edu.unju.fi.tp5.model.Producto;
 import ar.edu.unju.fi.tp5.service.IProductoService;
 
-
-
-
-
 @Service
 public class IProductoServiceImp implements IProductoService {
 	
@@ -54,6 +50,17 @@ public class IProductoServiceImp implements IProductoService {
 	public List<Producto> getAllProductos() {
 		// TODO Auto-generated method stub
 		return this.productos;
+	}
+
+	@Override
+	public Producto getProductoPorCodigo(int codigo) {
+		Producto Aux_producto = new Producto();
+		for (Producto p : productos) {
+			if (p.getCodigo() == codigo) {
+				Aux_producto = p;
+			}
+		}
+		return Aux_producto;
 	}
 	
 

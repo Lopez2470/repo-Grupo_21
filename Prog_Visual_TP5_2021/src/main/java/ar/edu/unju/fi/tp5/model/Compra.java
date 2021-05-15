@@ -53,6 +53,11 @@ public class Compra {
 		this.total = total;
 	}
 
+	public double obtenerCalculoTotal() {
+		double total = cantidad*producto.getPrecio();
+		return total;
+	}
+	
 	@Override
 	public String toString() {
 		return "Compra [id=" + id + ", producto=" + producto + ", cantidad=" + cantidad + ", total=" + total + "]";

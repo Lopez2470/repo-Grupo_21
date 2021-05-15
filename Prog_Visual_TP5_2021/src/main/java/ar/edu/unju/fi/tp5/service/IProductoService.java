@@ -20,6 +20,7 @@ public interface IProductoService {
 	/*Visualiza todos los productos dados de alta*/
 	public List<Producto> getAllProductos();
 		
-		
+	/*Encontrar un producto a travez de su codigo*/
+	public Producto getProductoPorCodigo(int codigo);	
 
 }
